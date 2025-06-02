@@ -5037,10 +5037,6 @@
 		(uuid "47369aa5-889f-49ec-ad7e-1444a9bd7c55")
 	)
 	(no_connect
-		(at 35.56 63.5)
-		(uuid "4a844208-db01-4aad-8d5a-43ba460d5297")
-	)
-	(no_connect
 		(at 66.04 146.05)
 		(uuid "4f6db7d6-c329-43b6-9955-0dce2624784f")
 	)
@@ -5539,6 +5535,16 @@
 			(type default)
 		)
 		(uuid "96316ac1-ff19-4ca9-947a-1520649e7da4")
+	)
+	(wire
+		(pts
+			(xy 25.4 63.5) (xy 35.56 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "963cfc14-d222-44c2-a6c9-41e3282e60bb")
 	)
 	(wire
 		(pts
@@ -8130,7 +8136,7 @@
 				(justify left top)
 			)
 		)
-		(property "Value" "56kOhm"
+		(property "Value" "5.1kOhm"
 			(at 22.9997 46.736 0)
 			(effects
 				(font
@@ -8219,35 +8225,36 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 16.51 48.26 90)
+		(lib_id "0402WGF5101TCE")
+		(at 20.32 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "405460e8-03bb-4df0-ad91-b045da7f9ff2")
-		(property "Reference" "#PWR033"
-			(at 20.32 48.26 0)
+		(uuid "3fde828a-978f-4fbd-8672-6b56dd5ded28")
+		(property "Reference" "R4"
+			(at 19.4437 61.976 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(face "Arial")
+					(size 1.6891 1.6891)
 				)
-				(hide yes)
+				(justify left top)
 			)
 		)
-		(property "Value" "+5V"
-			(at 12.7 48.2599 90)
+		(property "Value" "5.1kOhm"
+			(at 21.7297 61.976 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(face "Arial")
+					(size 1.6891 1.6891)
 				)
-				(justify left)
+				(justify left top)
 			)
 		)
-		(property "Footprint" ""
-			(at 16.51 48.26 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 20.32 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8256,7 +8263,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 48.26 0)
+			(at 20.32 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8264,22 +8271,61 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 16.51 48.26 0)
+		(property "Description" ""
+			(at 20.32 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(property "Manufacturer Part" "0402WGF5101TCE"
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UniOhm"
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C25905"
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fbbd93ec-6168-4bf8-91e9-5d18e46b250f")
 		)
 		(pin "1"
-			(uuid "99ee7cb0-bc8b-4206-9251-4618c4f4c6b7")
+			(uuid "503dcdf1-c750-4076-a3ff-0f214de0036e")
 		)
 		(instances
 			(project "weiland-esp32"
 				(path "/745a8d65-fa51-45f7-9665-7610e72f2a80"
-					(reference "#PWR033")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -9116,6 +9162,73 @@
 				(path "/a1dc64ca-b54e-4a93-b40f-f15a664195f8"
 					(reference "U3")
 					(unit 0)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 16.51 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "65d8435e-0665-4b22-9b5f-9b43db8545e6")
+		(property "Reference" "#PWR048"
+			(at 10.16 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 12.7 48.2599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 16.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 16.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 16.51 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e0964938-4182-4c49-bd85-b0e75ba1bd1e")
+		)
+		(instances
+			(project "weiland-esp32"
+				(path "/745a8d65-fa51-45f7-9665-7610e72f2a80"
+					(reference "#PWR048")
+					(unit 1)
 				)
 			)
 		)
@@ -10177,6 +10290,73 @@
 			(project ""
 				(path "/745a8d65-fa51-45f7-9665-7610e72f2a80"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 15.24 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8deb25a8-e75a-4378-9ac1-914b381d01f4")
+		(property "Reference" "#PWR033"
+			(at 8.89 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 11.43 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 15.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 15.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 15.24 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a7bd3925-d923-499e-803b-5f8fd16cac7f")
+		)
+		(instances
+			(project "weiland-esp32"
+				(path "/745a8d65-fa51-45f7-9665-7610e72f2a80"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
