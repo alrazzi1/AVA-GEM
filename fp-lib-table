@@ -1,6 +1,6 @@
 (fp_lib_table
   (version 7)
-  (lib (name "esp32-online-design")(type "KiCad")(uri "$(KIPRJMOD)/weiland-esp32.pretty")(options "")(descr ""))
+  (lib (name "esp32-online-design")(type "KiCad")(uri "$(KIPRJMOD)/AVA-GEM.pretty")(options "")(descr ""))
   (lib (name "esp32")(type "KiCad")(uri "${KIPRJMOD}/symbols/esp32")(options "")(descr ""))
   (lib (name "CP2102N-A02-GQFN28")(type "KiCad")(uri "${KIPRJMOD}/symbols/esp32/CP2102N-A02-GQFN28")(options "")(descr ""))
   (lib (name "AMS1117-3.3")(type "KiCad")(uri "${KIPRJMOD}/symbols/esp32/AMS1117-3.3")(options "")(descr ""))

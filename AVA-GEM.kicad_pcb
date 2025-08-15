@@ -2520,7 +2520,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "4bfcc4d0-2370-45d1-8eb0-b05b67e2d09c")
 			(effects
@@ -2687,7 +2687,7 @@
 			(uuid "3ba380d1-e3b7-4ece-81a3-1ececb017d8a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e6091ec1-d7f3-44ea-9058-5aad175a25bd")
 			(effects
@@ -5726,7 +5726,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C11"
-			(at 2.03 -1.27 360)
+			(at 2.03 -1.27 0)
 			(layer "F.SilkS")
 			(uuid "42f2adf8-4716-4505-b1bd-a77552047952")
 			(effects
@@ -5737,7 +5737,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "61cee15a-d286-4c32-9aa1-d8cb6345d958")
 			(effects
@@ -5904,7 +5904,7 @@
 			(uuid "c07573e6-5d12-4675-a3c1-02d78bd0b9b6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b5989d1d-9040-4bff-8524-77580d360465")
 			(effects
@@ -6972,7 +6972,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1002"
+		(property "LCSC" "C76883"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -8014,7 +8014,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C84256"
+		(property "LCSC" "C2286"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -10328,7 +10328,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C1002"
+		(property "LCSC" "C76883"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
